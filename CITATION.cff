@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it."
+title: "Transformer-Based Prediction of Limit Order Book Dynamics for Market Making"
+type: software
+authors:
+  - family-names: "Reindlmeier"
+    given-names: "Luis"
+    email: "luis.reindlmeier@fs-students.de"
+license: MIT
+repository-code: "https://github.com/luisreindlmeier/transformer-lob"
+date-released: "2026-01-23"

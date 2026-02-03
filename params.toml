@@ -1,0 +1,47 @@
+# CLI default parameters (loaded by src/cli.py).
+# Override via command-line flags. Code constants (paths, SEQ_SIZE, etc.) are in src/config.py.
+
+[preprocess]
+seed = 42
+
+[train]
+epochs = 10
+batch_size = 128
+horizon = 10
+data_fraction = 1.0
+test_fraction = 1.0
+num_workers = 4
+seed = 1
+
+[run]
+model = "TLOB"
+decay = false
+epochs = 10
+batch_size = 128
+lr = 0.0001
+patience = 5
+horizon = 10
+data_fraction = 1.0
+test_fraction = 1.0
+seed = 42
+lit_use_bin = true
+lit_use_event_embed = false
+lit_use_mean_pool = false
+lit_use_lr_schedule = false
+init_decay = 0.1
+decay_lr_multiplier = 10.0
+weight_decay = 0.0
+label_smoothing = 0.0
+use_f1_for_best = false
+
+[eval]
+data_fraction = 1.0
+test_fraction = 1.0
+batch_size = 128
+seed = 42
+
+[backtest]
+data_fraction = 1.0
+test_fraction = 1.0
+batch_size = 128
+seed = 42

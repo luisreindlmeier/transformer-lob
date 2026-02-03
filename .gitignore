@@ -1,0 +1,63 @@
+# Python
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Package / setuptools
+src.egg-info/
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+
+# Data (too large for Git)
+data/raw/*
+data/preprocessed/*
+!data/raw/.gitkeep
+!data/preprocessed/.gitkeep
+*.npy
+*.csv
+*.parquet
+
+# Checkpoints & Results (nicht auf GitHub)
+checkpoints/
+assets/
+lightning_logs/
+wandb/
+*.pt
+*.ckpt
+*.tar.gz
+# results/ vollständig versionieren (nach *.pt, damit .pt unter results/ mitgepusht werden)
+!results/**
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+~$*
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Testing
+.pytest_cache/
+test_data_sample_*.csv
+
+# Linting cache
+.ruff_cache/
+.mypy_cache/
+
+# Logs
+*.log
